@@ -77,9 +77,7 @@ def main():
     start_time = time.time()
     args = parse_arguments()
     
-    # Setup logging
-    log_level = 'DEBUG' if args.verbose else Config.LOG_LEVEL
-    setup_logging(log_level=log_level, log_file=Config.LOG_FILE)
+    
     
     logger.info("="*70)
     logger.info("  GTM AUTOMATION - STARTING")
@@ -150,22 +148,12 @@ def main():
             )
 
         if not account_id:
-            logger.info(
-                "No GTM account ID provided; attempting to resolve from container '%s'",
-                container_id,
-            )
             account_id, container_id = resolve_account_and_container_by_container_id(
-                Config.SERVICE_ACCOUNT_JSON_PATH,
+                None,
                 container_id,
             )
 
-        logger.info(
-            "Using GTM Account ID: %s, Container ID: %s", account_id, container_id
-        )
-
-        logger.info("\n[Step 4/7] Authenticating with GTM API...")
         gtm_client = GTMClient(
-            service_account_file=Config.SERVICE_ACCOUNT_JSON_PATH,
             account_id=account_id,
             container_id=container_id,
         )

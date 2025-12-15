@@ -2,17 +2,18 @@
 GTM Client - Handles all Google Tag Manager API interactions
 Manages authentication, workspace creation, and resource management (variables, triggers, tags)
 """
-import logging
 from datetime import datetime
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from typing import Dict, List, Optional, Any, Tuple
 import time
+import logging
+
+# Define logger for this module
+logger = logging.getLogger(__name__)
 
 from src.config import Config
-
-logger = logging.getLogger(__name__)
 
 
 def resolve_account_and_container_by_container_id(
@@ -32,11 +33,10 @@ def resolve_account_and_container_by_container_id(
     Raises:
         ValueError: if no matching container is found.
     """
-    logger.info("Resolving GTM account/container from container identifier '%s'", target_container)
-
     try:
-        credentials = service_account.Credentials.from_service_account_file(
-            service_account_file,
+        info = Config.get_service_account_info()
+        credentials = service_account.Credentials.from_service_account_info(
+            info,
             scopes=Config.GTM_SCOPES,
         )
         service = build("tagmanager", "v2", credentials=credentials)
@@ -59,12 +59,6 @@ def resolve_account_and_container_by_container_id(
                 public_id = container.get("publicId")
 
                 if target_container == container_id or target_container == public_id:
-                    logger.info(
-                        "Resolved container '%s' to account %s, container %s",
-                        target_container,
-                        account_id,
-                        container_id,
-                    )
                     return account_id, container_id
 
         raise ValueError(
@@ -72,49 +66,41 @@ def resolve_account_and_container_by_container_id(
             "Ensure the service account has access to the correct GTM account/container."
         )
     except HttpError as e:
-        logger.error("Failed to resolve account/container: %s", e)
         raise
 
 
 class GTMClient:
     """Google Tag Manager API Client"""
     
-    def __init__(self, service_account_file: str, account_id: str, container_id: str):
+    def __init__(self, account_id: str, container_id: str):
         """
         Initialize GTM Client
-        
         Args:
-            service_account_file: Path to service account JSON file
             account_id: GTM Account ID
             container_id: GTM Container ID
         """
         self.account_id = account_id
         self.container_id = container_id
         self.parent = f'accounts/{account_id}/containers/{container_id}'
-        self.service = self._authenticate(service_account_file)
+        self.service = self._authenticate()
         self.workspace_id = None
         self.workspace_path = None
-        
-    def _authenticate(self, service_account_file: str):
+
+    def _authenticate(self):
         """
-        Authenticate using service account credentials
-        
-        Args:
-            service_account_file: Path to service account JSON file
-            
+        Authenticate using service account credentials from .env fields
         Returns:
             Authenticated GTM service
         """
         try:
-            credentials = service_account.Credentials.from_service_account_file(
-                service_account_file,
+            info = Config.get_service_account_info()
+            credentials = service_account.Credentials.from_service_account_info(
+                info,
                 scopes=Config.GTM_SCOPES
             )
             service = build('tagmanager', 'v2', credentials=credentials)
-            logger.info("✓ Successfully authenticated with GTM API")
             return service
         except Exception as e:
-            logger.error(f"✗ Authentication failed: {str(e)}")
             raise
     
     def create_workspace(self, workspace_name: Optional[str] = None, 
