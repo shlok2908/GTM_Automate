@@ -1,0 +1,10 @@
+Variables sheet:
+name,type,value,parameter_key,parameter_value
+
+Triggers sheet:
+name,type,event_name,filter_type,filter_parameter
+TestTrigger1,CUSTOM_EVENT,TestEvent,,
+
+Tags sheet:
+name,type,html,firing_triggers,blocking_triggers,parameter_key,parameter_value
+TestTag1,sgtmadsct,,TestTrigger1,,conversionId|conversionLabel,123456789|TestLabel

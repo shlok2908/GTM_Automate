@@ -1,0 +1,615 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2025-11-10 13:45:00",
+  "containerVersion": {
+    "path": "accounts/6327905181/containers/237397345/versions/0",
+    "accountId": "6327905181",
+    "containerId": "237397345",
+    "containerVersionId": "0",
+    "container": {
+      "path": "accounts/6327905181/containers/237397345",
+      "accountId": "6327905181",
+      "containerId": "237397345",
+      "name": "Server-side GTM",
+      "usageContext": ["SERVER"]
+    },
+    "tag": [
+      {
+                "accountId": "6327905181",
+                "containerId": "237397345",
+                "tagId": "89",
+                "name": "cvt_237397345_331",
+                "type": "cvt_M3V5X",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "pagetype",
+                        "value": "home"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "evt",
+                        "value": "pageLoad"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "activateLogs",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "firstClick",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "spa",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "pageTitle"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "prodidGa",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "prodid"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "pagePath"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gv"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "vid"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "asc"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "pageLocation"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "searchTerm"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "msclkidQuery"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "createCookie",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "ti",
+                        "value": "271009999"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "user_id"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "msclkidCookie"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "itemsGa",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "pageReferrer"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "ecommCategory"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gc"
+                    }
+                ],
+                "fingerprint": "1765513613180",
+                "firingTriggerId": [
+                  "1160"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+      {
+        "accountId": "6327905181",
+        "containerId": "237397345",
+        "tagId": "1354",
+        "name": "submit_otp_click_686425986_H4TvCPfDopQbEIKPqMcC",
+        "type": "sgtmadsct",  
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "enableNewCustomerReporting",
+            "value": "false"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "enableConversionLinker",
+            "value": "true"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "enableProductReporting",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "conversionValue",
+            "value": "Login_Sep25"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "conversionId",
+            "value": "686425986"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "conversionLabel",
+            "value": "H4TvCPfDopQbEIKPqMcC"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "rdp",
+            "value": "false"
+          }
+        ],
+        "fingerprint": "1765363697134",
+        "firingTriggerId": [
+          "1353"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NOT_SET"
+        }
+      },
+      {
+        "accountId": "6327905181",
+        "containerId": "237397345",
+        "tagId": "1217",
+        "name": "ACCOUNT AGGREGATOR OTP_Bing",
+        "type": "cvt_M3V5X",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "pagetype",
+            "value": "home"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "evt",
+            "value": "pageLoad"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "activateLogs",
+            "value": "false"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "firstClick",
+            "value": "false"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "spa",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "pageTitle"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "prodidGa",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "prodid"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "pagePath"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "gv"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "vid"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "pageLocation"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "searchTerm"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "msclkidQuery"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "createCookie",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "ti",
+            "value": "271002032"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "user_id"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "msclkidCookie"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "itemsGa",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "pageReferrer"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "ecommCategory"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "gc"
+          }
+        ],
+        "fingerprint": "1762769572067",
+        "firingTriggerId": [
+          "1160"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NOT_SET"
+        }
+      },
+      {
+        "accountId": "6327905181",
+        "containerId": "237397345",
+        "tagId": "801",
+        "name": "BL_ApplyNow_Bing_271007464",
+        "type": "cvt_M3V5X",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "pagetype",
+            "value": "product"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "evt",
+            "value": "pageLoad"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "activateLogs",
+            "value": "false"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "firstClick",
+            "value": "false"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "spa",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "pageTitle"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "prodidGa",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "prodid"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "pagePath"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "gv"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "vid"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "pageLocation"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "searchTerm"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "msclkidQuery"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "createCookie",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "ti",
+            "value": "271007464"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "user_id"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "msclkidCookie"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "itemsGa",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "pageReferrer"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "ecommCategory"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "gc"
+          }
+        ],
+        "fingerprint": "1747024837110",
+        "firingTriggerId": [
+          "798"
+        ],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NOT_SET"
+        }
+      }
+    ],
+    "trigger": [
+      {
+        "accountId": "6327905181",
+        "containerId": "237397345",
+        "triggerId": "1160",
+        "name": "pix_942762457_Aggregator_Partner",
+        "type": "SERVER_PAGEVIEW",
+        "filter": [
+          {
+            "type": "CONTAINS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{page_location}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "https://consent.bajajfinserv.in/AggregatorV2/Aggregator/Partner"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1762497574210"
+      },
+      {
+        "accountId": "6327905181",
+        "containerId": "237397345",
+        "triggerId": "798",
+        "name": "business_loan_Check_Eligibility",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "MATCH_REGEX",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "loan_summary"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{bfl_cta_text}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "Check Eligibilty"
+              }
+            ]
+          },
+          {
+            "type": "CONTAINS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{page_location}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "/business-loan"
+              }
+            ]
+          },
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{bfl_component}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "loan_summary"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1752057263452"
+      },
+      {
+        "accountId": "6327905181",
+        "containerId": "237397345",
+        "triggerId": "1353",
+        "name": "submit_otp_click_686425986_H4TvCPfDopQbEIKPqMcC",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "MATCH_REGEX",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "Login_Sep25|Login"
+              }
+            ]
+          }
+        ],
+        "filter": [
+          {
+            "type": "CONTAINS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{page_location}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "/webform/v1/emicard/login"
+              }
+            ]
+          },
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{bfl_component}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "Login"
+              }
+            ]
+          },
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{bfl_element}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "button_click_cta"
+              }
+            ]
+          },
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{bfl_cta_text}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "OTP_VALIDATION_API_END"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1765363685769"
+      }
+    ]
+  }
+}

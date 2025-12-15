@@ -1,0 +1,186 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2025-11-10 13:45:00",
+  "containerVersion": {
+    "path": "accounts/378976/containers/104720860/versions/0",
+    "accountId": "6327905181",
+    "containerId": "237397345",
+    "containerVersionId": "0",
+    "container": {
+      "path": "accounts/378976/containers/104720860",
+      "accountId": "6327905181",
+      "containerId": "237397345",
+      "name": "Server-side GTM",
+      "usageContext": ["SERVER"]
+    },
+    "tag": [
+      {
+        "accountId": "6327905181",
+        "containerId": "237397345",
+        "tagId": "209",
+        "name": "pixel_942762457_personal_details",
+        "type": "sgtmadsremarket",
+        "parameter": [
+          { "type": "BOOLEAN", "key": "enableConversionLinker", "value": "true" },
+          { "type": "BOOLEAN", "key": "enableDynamicRemarketing", "value": "false" },
+          { "type": "BOOLEAN", "key": "enableCustomParams", "value": "false" },
+          { "type": "BOOLEAN", "key": "enableUserId", "value": "false" },
+          { "type": "TEMPLATE", "key": "conversionId", "value": "942762457" },
+          { "type": "BOOLEAN", "key": "rdp", "value": "false" }
+        ],
+        "firingTriggerId": ["309"],
+        "tagFiringOption": "ONCE_PER_EVENT"
+      },
+      {
+        "accountId": "6327905181",
+        "containerId": "237397345",
+        "tagId": "210",
+        "name": "pixel_942762457_income_verification_landing",
+        "type": "sgtmadsremarket",
+        "parameter": [
+          { "type": "BOOLEAN", "key": "enableConversionLinker", "value": "true" },
+          { "type": "BOOLEAN", "key": "enableDynamicRemarketing", "value": "false" },
+          { "type": "BOOLEAN", "key": "enableCustomParams", "value": "false" },
+          { "type": "BOOLEAN", "key": "enableUserId", "value": "false" },
+          { "type": "TEMPLATE", "key": "conversionId", "value": "942762457" },
+          { "type": "BOOLEAN", "key": "rdp", "value": "false" }
+        ],
+        "firingTriggerId": ["310"],
+        "tagFiringOption": "ONCE_PER_EVENT"
+      },
+      {
+        "accountId": "6327905181",
+        "containerId": "237397345",
+        "tagId": "211",
+        "name": "pixel_942762457_income_verification_bankselection",
+        "type": "sgtmadsremarket",
+        "parameter": [
+          { "type": "BOOLEAN", "key": "enableConversionLinker", "value": "true" },
+          { "type": "BOOLEAN", "key": "enableDynamicRemarketing", "value": "false" },
+          { "type": "BOOLEAN", "key": "enableCustomParams", "value": "false" },
+          { "type": "BOOLEAN", "key": "enableUserId", "value": "false" },
+          { "type": "TEMPLATE", "key": "conversionId", "value": "942762457" },
+          { "type": "BOOLEAN", "key": "rdp", "value": "false" }
+        ],
+        "firingTriggerId": ["311"],
+        "tagFiringOption": "ONCE_PER_EVENT"
+      },
+      {
+        "accountId": "6327905181",
+        "containerId": "237397345",
+        "tagId": "212",
+        "name": "pixel_942762457_account_aggregator_otp",
+        "type": "sgtmadsremarket",
+        "parameter": [
+          { "type": "BOOLEAN", "key": "enableConversionLinker", "value": "true" },
+          { "type": "BOOLEAN", "key": "enableDynamicRemarketing", "value": "false" },
+          { "type": "BOOLEAN", "key": "enableCustomParams", "value": "false" },
+          { "type": "BOOLEAN", "key": "enableUserId", "value": "false" },
+          { "type": "TEMPLATE", "key": "conversionId", "value": "942762457" },
+          { "type": "BOOLEAN", "key": "rdp", "value": "false" }
+        ],
+        "firingTriggerId": ["312"],
+        "tagFiringOption": "ONCE_PER_EVENT"
+      },
+      {
+        "accountId": "6327905181",
+        "containerId": "237397345",
+        "tagId": "213",
+        "name": "pixel_942762457_account_aggregator_bankselection",
+        "type": "sgtmadsremarket",
+        "parameter": [
+          { "type": "BOOLEAN", "key": "enableConversionLinker", "value": "true" },
+          { "type": "BOOLEAN", "key": "enableDynamicRemarketing", "value": "false" },
+          { "type": "BOOLEAN", "key": "enableCustomParams", "value": "false" },
+          { "type": "BOOLEAN", "key": "enableUserId", "value": "false" },
+          { "type": "TEMPLATE", "key": "conversionId", "value": "942762457" },
+          { "type": "BOOLEAN", "key": "rdp", "value": "false" }
+        ],
+        "firingTriggerId": ["313"],
+        "tagFiringOption": "ONCE_PER_EVENT"
+      }
+    ],
+    "trigger": [
+      {
+        "accountId": "6327905181",
+        "containerId": "237397345",
+        "triggerId": "309",
+        "name": "pixel_942762457_personal_details",
+        "type": "SERVER_PAGEVIEW",
+        "filter": [
+          {
+            "type": "CONTAINS",
+            "parameter": [
+              { "type": "TEMPLATE", "key": "arg0", "value": "{{page_location}}" },
+              { "type": "TEMPLATE", "key": "arg1", "value": "/3in1web/b2c/personaldetail" }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "6327905181",
+        "containerId": "237397345",
+        "triggerId": "310",
+        "name": "pixel_942762457_income_verification_landing",
+        "type": "SERVER_PAGEVIEW",
+        "filter": [
+          {
+            "type": "CONTAINS",
+            "parameter": [
+              { "type": "TEMPLATE", "key": "arg0", "value": "{{page_location}}" },
+              { "type": "TEMPLATE", "key": "arg1", "value": "/consent.bajajfinserv.in/AggregatorV2/Aggregator/LandingPage" }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "6327905181",
+        "containerId": "237397345",
+        "triggerId": "311",
+        "name": "pixel_942762457_income_verification_bankselection",
+        "type": "SERVER_PAGEVIEW",
+        "filter": [
+          {
+            "type": "CONTAINS",
+            "parameter": [
+              { "type": "TEMPLATE", "key": "arg0", "value": "{{page_location}}" },
+              { "type": "TEMPLATE", "key": "arg1", "value": "/consent.bajajfinserv.in/AggregatorV2/Aggregator/BankSelection" }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "6327905181",
+        "containerId": "237397345",
+        "triggerId": "312",
+        "name": "pixel_942762457_account_aggregator_otp",
+        "type": "SERVER_PAGEVIEW",
+        "filter": [
+          {
+            "type": "CONTAINS",
+            "parameter": [
+              { "type": "TEMPLATE", "key": "arg0", "value": "{{page_location}}" },
+              { "type": "TEMPLATE", "key": "arg1", "value": "/consent.bajajfinserv.in/AggregatorV2/Aggregator/Partner" }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "6327905181",
+        "containerId": "237397345",
+        "triggerId": "313",
+        "name": "pixel_942762457_account_aggregator_bankselection",
+        "type": "SERVER_PAGEVIEW",
+        "filter": [
+          {
+            "type": "CONTAINS",
+            "parameter": [
+              { "type": "TEMPLATE", "key": "arg0", "value": "{{page_location}}" },
+              { "type": "TEMPLATE", "key": "arg1", "value": "www.bajajfinserv.in/AggregatorV2/Aggregator/Partner" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
